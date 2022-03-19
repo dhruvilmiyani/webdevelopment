@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>redstore | ecommerce website design</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<img src="images/logo.png" width="125px">
+			</div>
+			<nav>
+				<ul>
+					<LI><a href="index.html">home</a></LI>
+					<LI><a href="products.html">products</a></LI>
+					<LI><a href="">about</a></LI>
+					<LI><a href="">contact</a></LI>
+					<LI><a href="account.html">account</a></LI>
+				</ul>
+			</nav>
+			<img src="images/cart.png" width="30px" height="30px">
+			<img src="images/menu.png" width="30px" height="30px" class="menu-icon">
+		</div>
+</div>
+<!-- account page -->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/image1.png" width="100%" >
+            </div>
+            <div class="col-2">
+               <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">login</span>
+                        <span onclick="register()">register</span>
+                        <hr id="indicater"> 
+                    </div>
+                    <form id="loginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="text" placeholder="password">
+                        <button type="submit" class="btn">login</button>
+                        <a href="">forgotpassword</a>
+                    </form>
+
+                    <form id="RegForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="password">
+                        <button type="submit" class="btn">register</button>
+                        <a href="">forgotpassword</a>
+                    </form>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        </h3>Download Our App</h3>
+                        <p>Download app for android and ios mobile phone</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png">
+                            <img src="images/app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                        <p>our purpose us sustainably make the pleasure android
+                            benifts of sports accessible to the many.
+                        </p>
+                    </div>
+                    <div class="footer-col-3">
+                        </h3>usefull links</h3>
+                        <ul>
+                            <li>coupons</li>
+                            <li>blog post</li>
+                            <li>retyrn policy</li>
+                            <li>joi affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                    </h3>follow us</h3>
+                        <ul>
+                            <li>facebook</li>
+                            <li>twitter</li>
+                            <li>instagram</li>
+                            <li>youtube</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <script>
+                var loginForm=document.getElementById("loginForm");
+                var RegForm=document.getElementById("RegForm");
+                var indicater=document.getElementById("indicater");
+                function register(){
+                    RegForm.style.transform="translate(0px)";
+                  loginForm.style.transform="translate(0px)";
+                  indicater.style.transform="translate(100px)"
+                }
+                function login(){
+                    RegForm.style.transform="translate(300px)";
+                  loginForm.style.transform="translate(300px)";
+                  indicater.style.transform="translate(0px)"
+
+                }
+            </script>
+        </body>
+        </html>        
